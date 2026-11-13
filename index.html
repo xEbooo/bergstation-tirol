@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bergstation Tirol</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bergstation">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f2f4f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10171d" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{
+  /* Layout: eine Spalte, Kopfzeile oben, vier Reiter unten, Detail als Vollbild-Blatt */
+  --bg:#f2f4f6; --surface:#ffffff; --ink:#16212a; --muted:#5d6c78; --line:#d9e0e6;
+  --accent:#0a6a8a; --accent-ink:#ffffff; --chip:#e7ecf0;
+  --good:#2e7d4f; --warn:#b26a00; --crit:#b3261e;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --num:ui-rounded,"SF Pro Rounded",-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10171d; --surface:#18222b; --ink:#e8eef2; --muted:#93a3af; --line:#2a3742;
+    --accent:#5cc0de; --accent-ink:#06222c; --chip:#22303b;
+    --good:#6fcf97; --warn:#f2b560; --crit:#ff8a80; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10171d; --surface:#18222b; --ink:#e8eef2; --muted:#93a3af; --line:#2a3742;
+  --accent:#5cc0de; --accent-ink:#06222c; --chip:#22303b;
+  --good:#6fcf97; --warn:#f2b560; --crit:#ff8a80; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.4 var(--font);-webkit-text-size-adjust:100%;overscroll-behavior-y:none}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+.app{height:100%;display:flex;flex-direction:column}
+header.top{padding:calc(env(safe-area-inset-top) + 10px) 16px 8px;display:flex;align-items:center;gap:12px;background:var(--bg)}
+header.top h1{font-size:19px;margin:0;font-weight:700;letter-spacing:-.01em;flex:1;min-width:0}
+header.top small{display:block;font-weight:400;font-size:12px;color:var(--muted);letter-spacing:0}
+.iconbtn{border:1px solid var(--line);background:var(--surface);border-radius:10px;height:40px;min-width:40px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+main{flex:1;min-height:0;position:relative}
+.view{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:4px 16px 24px;display:none}
+.view.on{display:block}
+#v-karte.on{display:flex;flex-direction:column;padding:0}
+nav.tabs{display:flex;border-top:1px solid var(--line);background:var(--surface);padding-bottom:env(safe-area-inset-bottom)}
+nav.tabs a{flex:1;text-align:center;padding:8px 2px 7px;font-size:11px;color:var(--muted);text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:2px}
+nav.tabs a svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+nav.tabs a.on{color:var(--accent);font-weight:600}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0}
+.search{flex:1 1 180px;min-width:0;height:42px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:0 12px}
+select.sel{height:42px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:0 8px;max-width:100%}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 13px;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.note{font-size:13px;color:var(--muted);margin:6px 0}
+.banner{border:1px solid var(--line);border-left:4px solid var(--warn);background:var(--surface);border-radius:10px;padding:10px 12px;font-size:14px;margin:8px 0}
+.banner.err{border-left-color:var(--crit)}
+ul.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.row{display:grid;grid-template-columns:34px 1fr auto;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 10px 8px 4px;width:100%;text-align:left}
+.row .nm{font-weight:600;overflow-wrap:break-word;hyphens:auto}
+.row .sub{font-size:12.5px;color:var(--muted)}
+.vals{display:flex;gap:4px;font-family:var(--num);font-variant-numeric:tabular-nums;text-align:right}
+.vals div{min-width:40px}
+.vals b{display:block;font-size:15px;font-weight:650;line-height:1.15}
+.vals span{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.star{border:0;background:none;width:34px;height:40px;font-size:20px;line-height:1;color:var(--muted);padding:0}
+.star.on{color:#e0a100}
+.rowbtn{all:unset;cursor:pointer;display:contents}
+/* Detail-Blatt */
+.sheet{position:fixed;inset:0;background:var(--bg);z-index:1000;display:none;flex-direction:column}
+.sheet.on{display:flex}
+.sheet .sh{padding:calc(env(safe-area-inset-top) + 10px) 16px 10px;display:flex;gap:10px;align-items:flex-start;border-bottom:1px solid var(--line);background:var(--surface)}
+.sheet h2{margin:0;font-size:19px;flex:1;text-wrap:balance}
+.sheet .sb{overflow-y:auto;padding:12px 16px calc(env(safe-area-inset-bottom) + 24px);flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.tile .k{font-size:12px;color:var(--muted)}
+.tile .v{font:650 24px/1.2 var(--num);font-variant-numeric:tabular-nums}
+.tile .v small{font-size:13px;font-weight:500;color:var(--muted);margin-left:3px}
+.tile .x{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+h3{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:20px 0 8px}
+.plot{background:#fff;border:1px solid var(--line);border-radius:12px;overflow-x:auto}
+.plot img{display:block;width:100%;min-width:560px;height:auto}
+.arrow{display:inline-block;width:16px;height:16px;vertical-align:-2px}
+/* Lawinenreport */
+.bul{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin:10px 0;overflow:hidden}
+.bul .hd{display:flex;gap:12px;align-items:center;padding:12px}
+.lvl{width:52px;height:52px;border-radius:10px;display:grid;place-items:center;font:800 26px/1 var(--num);color:#111;flex:none;border:1px solid rgba(0,0,0,.25)}
+.l1{background:#ccff66}.l2{background:#ffff00}.l3{background:#ff9900}.l4{background:#ff0000;color:#fff}
+.l5{background:repeating-conic-gradient(#ff0000 0 25%,#111 0 50%) 0 0/16px 16px;color:#fff;text-shadow:0 0 3px #000}
+.l0{background:var(--chip);color:var(--muted)}
+.bul .hl{font-weight:650;text-wrap:balance}
+.bul .body{padding:0 12px 12px;font-size:14.5px}
+.rate{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
+.pill{background:var(--chip);border-radius:999px;padding:4px 10px;font-size:13px}
+.prob{display:grid;grid-template-columns:54px 1fr;gap:10px;align-items:center;border-top:1px solid var(--line);padding:9px 0}
+.prob b{display:block}
+.prob span{font-size:13px;color:var(--muted)}
+details{border-top:1px solid var(--line);padding:9px 0}
+details summary{font-weight:600;cursor:pointer}
+details p{margin:8px 0 0}
+/* Karte */
+#map{flex:1;min-height:260px;background:var(--chip)}
+.mapbar{padding:6px 16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.mk{font:700 11px/1 var(--num);padding:3px 5px;border-radius:7px;border:1.5px solid rgba(0,0,0,.55);color:#111;white-space:nowrap;transform:translate(-50%,-50%);display:inline-block;box-shadow:0 1px 2px rgba(0,0,0,.35)}
+.mk.fav{border-color:#e0a100;border-width:2.5px}
+.leaflet-div-icon{background:none;border:0}
+/* Werkzeuge */
+.tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}
+.tool h2{font-size:16px;margin:0 0 4px}
+.big{font:750 54px/1.05 var(--num);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.big small{font-size:20px;color:var(--muted);font-weight:500}
+.primary{background:var(--accent);color:var(--accent-ink);border:0;border-radius:10px;height:44px;padding:0 16px;font-weight:600}
+.state{display:inline-block;border-radius:999px;padding:3px 10px;font-size:13px;font-weight:600;background:var(--chip)}
+.state.s1{background:#dff3e4;color:#1d5c38}.state.s2{background:#fff0c7;color:#7a4b00}.state.s3{background:#ffd9b8;color:#8a3b00}.state.s4{background:#ffd3cf;color:#8f1d16}
+@media (prefers-reduced-motion:no-preference){.spin{animation:sp 1s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <h1>Bergstation Tirol<small id="stand">Daten werden geladen …</small></h1>
+    <button class="iconbtn" id="reload" aria-label="Daten neu laden"><svg id="reloadIc" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 4v5h-5"/></svg></button>
+  </header>
+  <main>
+    <section class="view" id="v-stationen">
+      <div class="bar">
+        <input class="search" id="q" type="search" placeholder="Station oder Region suchen" autocomplete="off">
+        <select class="sel" id="sort" aria-label="Sortierung">
+          <option value="name">Name</option><option value="alt">Seehöhe</option><option value="HS">Schneehöhe</option>
+          <option value="HSD24">Neuschnee 24 h</option><option value="LT">Temperatur</option><option value="WG_BOE">Böen</option>
+        </select>
+      </div>
+      <div class="chips" id="modeChips"></div>
+      <div class="chips" id="landChips"></div>
+      <div id="stMsg"></div>
+      <ul class="list" id="stList"></ul>
+      <p class="note" id="stCount"></p>
+    </section>
+    <section class="view" id="v-karte">
+      <div class="mapbar">
+        <select class="sel" id="mapParam" aria-label="Wert auf der Karte">
+          <option value="HS">Schneehöhe (cm)</option><option value="HSD24">Neuschnee 24 h (cm)</option>
+          <option value="LT">Temperatur (°C)</option><option value="WG_BOE">Böen (km/h)</option>
+        </select>
+        <button class="iconbtn" id="locate">Mein Standort</button>
+        <span class="note" id="mapMsg"></span>
+      </div>
+      <div id="map"></div>
+    </section>
+    <section class="view" id="v-lawinen">
+      <div class="bar"><input class="search" id="bq" type="search" placeholder="Region suchen, z. B. Verwall" autocomplete="off"></div>
+      <div class="chips" id="bLandChips"></div>
+      <p class="note" id="bStand"></p>
+      <div id="bList"></div>
+    </section>
+    <section class="view" id="v-werkzeuge">
+      <div class="tool">
+        <h2>Hangneigung</h2>
+        <p class="note">Handy flach auf den Hang oder auf den Skistock legen, die Längsseite zeigt in Falllinie.</p>
+        <div class="big" id="incl">–<small>°</small></div>
+        <p><span class="state" id="inclState">noch keine Messung</span></p>
+        <button class="primary" id="sensBtn">Sensoren einschalten</button>
+      </div>
+      <div class="tool">
+        <h2>Kompass und Exposition</h2>
+        <div class="big" id="head">–<small>°</small></div>
+        <p class="note" id="headTxt">Zeigt die Richtung, in die die Oberkante des Handys zeigt.</p>
+      </div>
+      <div class="tool">
+        <h2>Höhe und Position</h2>
+        <div class="big" id="alt">–<small> m</small></div>
+        <p class="note" id="posTxt">GPS-Höhe, je nach Empfang ± 10 bis 30 m.</p>
+        <button class="primary" id="posBtn">Position bestimmen</button>
+      </div>
+      <p class="note">Sensorwerte sind Richtwerte und ersetzen keine Messung im Gelände.</p>
+      <p class="note">Inoffizielle App. Daten: Lawinenwarndienste Tirol, Südtirol und Trentino über <a href="https://lawinen.report" rel="noopener">lawinen.report</a>. Maßgeblich ist immer der offizielle Lawinenreport.</p>
+    </section>
+  </main>
+  <nav class="tabs" id="tabs">
+    <a href="#stationen" data-t="stationen"><svg viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 8h14M8 8a4 4 0 0 0 8 0"/><circle cx="12" cy="4" r="1.2"/></svg>Stationen</a>
+    <a href="#karte" data-t="karte"><svg viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Karte</a>
+    <a href="#lawinen" data-t="lawinen"><svg viewBox="0 0 24 24"><path d="M3 20 10 6l4 7 2-3 5 10H3z"/><path d="M8.5 9.5 10 11l1.5-1.5"/></svg>Lawinen</a>
+    <a href="#werkzeuge" data-t="werkzeuge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2z"/></svg>Werkzeuge</a>
+  </nav>
+</div>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="shT">
+  <div class="sh">
+    <button class="iconbtn" id="shClose" aria-label="Zurück">‹ Zurück</button>
+    <h2 id="shT"></h2>
+    <button class="star" id="shStar" aria-label="Favorit">☆</button>
+  </div>
+  <div class="sb" id="shB"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+"use strict";
+/* ---------- Konfiguration ---------- */
+const CFG = {
+  stations: "https://static.avalanche.report/weather_stations/stations.geojson",
+  bulletinBases: ["https://static.avalanche.report/bulletins", "https://avalanche.report/bulletins"],
+  plot: (id, range) => `https://wiski.tirol.gv.at/lawine/grafiken/800/standard/${range}/${encodeURIComponent(id)}.png`,
+  refreshMin: 15
+};
+const LAND = [["AT-07","Tirol"],["IT-32-BZ","Südtirol"],["IT-32-TN","Trentino"],["","Alle"]];
+const FIELDS = {
+  HS:["Schneehöhe","cm",0], HSD24:["Differenz 24 h","cm",0], HSD48:["Differenz 48 h","cm",0], HSD72:["Differenz 72 h","cm",0],
+  LT:["Lufttemperatur","°C",1], LT_MAX:["Maximum 24 h","°C",1], LT_MIN:["Minimum 24 h","°C",1], TD:["Taupunkt","°C",1],
+  OFT:["Oberflächentemperatur","°C",1], RH:["Relative Feuchte","%",0], WG:["Wind","km/h",0], WG_BOE:["Böen","km/h",0],
+  WR:["Windrichtung","°",0], N6:["Niederschlag 6 h","mm",1], N24:["Niederschlag 24 h","mm",1], N48:["Niederschlag 48 h","mm",1],
+  N72:["Niederschlag 72 h","mm",1], LD:["Luftdruck","hPa",0], GS_O:["Globalstrahlung","W/m²",0], GS_U:["Reflektierte Strahlung","W/m²",0]
+};
+const LVL = {low:[1,"gering"],moderate:[2,"mäßig"],considerable:[3,"erheblich"],high:[4,"groß"],very_high:[5,"sehr groß"]};
+const PROB = {new_snow:"Neuschnee",wind_slab:"Triebschnee",persistent_weak_layers:"Altschnee",wet_snow:"Nassschnee",
+  gliding_snow:"Gleitschnee",cornices:"Wechten",no_distinct_avalanche_problem:"Kein ausgeprägtes Lawinenproblem",favourable_situation:"Günstige Situation"};
+const PERIOD = {all_day:"",earlier:"Vormittag",later:"Nachmittag"};
+
+/* ---------- Helfer ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const rich = s => esc(s).replace(/&lt;br\s*\/?&gt;/gi, "<br>");
+const num = (v, d=0) => (v == null || !isFinite(v)) ? "–" : Number(v).toFixed(d).replace("-0", "0").replace(".", ",");
+const store = {
+  get(k, def){ try { const v = localStorage.getItem(k); return v == null ? def : JSON.parse(v); } catch(e){ return def; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+};
+const viennaDate = (offsetDays=0) => new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Vienna"}).format(new Date(Date.now()+offsetDays*864e5));
+const viennaHour = () => Number(new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Vienna",hour:"2-digit",hour12:false}).format(new Date()));
+const fmtTime = iso => { const d = new Date(iso); return isNaN(d) ? "" : d.toLocaleString("de-AT",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}); };
+const compass = deg => ["N","NO","O","SO","S","SW","W","NW"][Math.round((((deg%360)+360)%360)/45)%8];
+function dist(a,b,c,d){ const R=6371,r=Math.PI/180,x=(c-a)*r,y=(d-b)*r; const h=Math.sin(x/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin(y/2)**2; return 2*R*Math.asin(Math.sqrt(h)); }
+const windArrow = deg => deg == null ? "" : `<svg class="arrow" viewBox="0 0 16 16" style="transform:rotate(${Math.round(deg)+180}deg)" aria-hidden="true"><path d="M8 1 13 14 8 11 3 14z" fill="currentColor"/></svg>`;
+
+/* ---------- Zustand ---------- */
+const S = {
+  stations: [], stTime: null, stStale: false,
+  bulletins: null, bulDate: null, bulErr: null,
+  fav: new Set(store.get("bt_fav", [])),
+  prefs: Object.assign({land:"AT-07", mode:"alle", sort:"name", mapParam:"HS", bland:"AT-07"}, store.get("bt_prefs", {})),
+  pos: null, open: null
+};
+const savePrefs = () => store.set("bt_prefs", S.prefs);
+
+/* ---------- Stationen laden ---------- */
+function normStation(f){
+  const p = f.properties || {}, c = (f.geometry && f.geometry.coordinates) || [];
+  const reg = String(p["LWD-Region"] || ""); const m = reg.match(/^([A-Z]{2}-[0-9A-Z-]+)\s+(.*)$/);
+  const v = {}; for (const k in FIELDS) if (typeof p[k] === "number" && isFinite(p[k])) v[k] = p[k];
+  return { id: String(f.id || p["LWD-Nummer"] || p.name), name: p.name || "Ohne Namen", lon: c[0], lat: c[1], alt: c[2],
+    rc: m ? m[1] : "", rn: m ? m[2] : reg, op: p.operator || "", opl: p.operatorLink || "", plot: p.plot || "", date: p.date || "", since: p.Beobachtungsbeginn || "", v };
+}
+async function loadStations(){
+  try {
+    const r = await fetch(CFG.stations, {cache:"no-store"});
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const j = await r.json();
+    S.stations = (j.features || []).map(normStation).filter(s => isFinite(s.lat) && isFinite(s.lon));
+    S.stTime = Date.now(); S.stStale = false;
+    store.set("bt_st", {t:S.stTime, d:S.stations});
+  } catch(e) {
+    const c = store.get("bt_st", null);
+    if (c && c.d) { S.stations = c.d; S.stTime = c.t; S.stStale = true; }
+    else { S.stations = []; S.stErr = e.message; }
+  }
+}
+/* ---------- Lawinenreport laden ---------- */
+async function loadBulletins(){
+  const days = (viennaHour() >= 17 ? [1,0,-1] : [0,-1]).map(viennaDate);
+  const urls = [];
+  for (const base of CFG.bulletinBases){
+    for (const d of days) urls.push([`${base}/${d}/${d}_EUREGIO_de_CAAMLv6.json`, d]);
+    urls.push([`${base}/latest/EUREGIO_de_CAAMLv6.json`, null]);
+  }
+  S.bulErr = null;
+  for (const [u, d] of urls){
+    try {
+      const r = await fetch(u, {cache:"no-store"});
+      if (!r.ok) continue;
+      const j = await r.json();
+      if (!j.bulletins || !j.bulletins.length) continue;
+      S.bulletins = j.bulletins; S.bulDate = d || (j.bulletins[0].customData?.ALBINA?.mainDate) || "";
+      S.bulStale = false; store.set("bt_bu", {t:Date.now(), date:S.bulDate, d:S.bulletins});
+      return;
+    } catch(e) { S.bulErr = e.message; }
+  }
+  const c = store.get("bt_bu", null);
+  if (c && c.d) { S.bulletins = c.d; S.bulDate = c.date; S.bulStale = true; S.bulT = c.t; }
+  else S.bulletins = null;
+}
+
+/* ---------- Stationsliste ---------- */
+function chips(el, items, cur, on){
+  el.innerHTML = items.map(([k,l]) => `<button class="chip" data-k="${esc(k)}" aria-pressed="${k===cur}">${esc(l)}</button>`).join("");
+  el.onclick = e => { const b = e.target.closest(".chip"); if (b) on(b.dataset.k); };
+}
+function filtered(){
+  const q = $("q").value.trim().toLowerCase(), P = S.prefs;
+  let a = S.stations.filter(s => (!P.land || s.rc.startsWith(P.land)) && (!q || (s.name+" "+s.rn).toLowerCase().includes(q)));
+  if (P.mode === "fav") a = a.filter(s => S.fav.has(s.id));
+  if (P.mode === "nah" && S.pos) { a.forEach(s => s.km = dist(S.pos.lat,S.pos.lon,s.lat,s.lon)); a.sort((x,y) => x.km-y.km); return a; }
+  const k = P.sort;
+  if (k === "name") a.sort((x,y) => x.name.localeCompare(y.name,"de"));
+  else if (k === "alt") a.sort((x,y) => (y.alt||0)-(x.alt||0));
+  else a.sort((x,y) => (y.v[k] ?? -1e9) - (x.v[k] ?? -1e9));
+  return a;
+}
+function renderStations(){
+  const P = S.prefs;
+  chips($("modeChips"), [["alle","Alle"],["fav","★ Favoriten"],["nah","In der Nähe"]], P.mode, k => {
+    P.mode = k; savePrefs();
+    if (k === "nah" && !S.pos) return locateMe(renderStations, renderStations);
+    renderStations();
+  });
+  chips($("landChips"), LAND, P.land, k => { P.land = k; savePrefs(); renderStations(); if (MAP) drawMarkers(); });
+  $("sort").value = P.sort;
+  let msg = "";
+  if (S.stErr && !S.stations.length) msg = `<div class="banner err">Die Stationsdaten konnten nicht geladen werden (${esc(S.stErr)}). Prüfe die Internetverbindung und tippe oben auf Neu laden.</div>`;
+  else if (S.stStale) msg = `<div class="banner">Keine Verbindung. Du siehst gespeicherte Daten vom ${esc(fmtTime(S.stTime))}.</div>`;
+  if (P.mode === "nah" && !S.pos) msg += `<div class="banner">Standort nicht verfügbar. Erlaube den Standortzugriff im Browser, dann werden die nächsten Stationen zuerst gezeigt.</div>`;
+  $("stMsg").innerHTML = msg;
+  const a = filtered();
+  $("stList").innerHTML = a.map(s => {
+    const v = s.v, km = (P.mode === "nah" && S.pos && s.km != null) ? ` · ${num(s.km, s.km < 10 ? 1 : 0)} km` : "";
+    return `<li class="row" data-id="${esc(s.id)}">
+      <button class="star ${S.fav.has(s.id)?"on":""}" data-star aria-label="Favorit umschalten">${S.fav.has(s.id)?"★":"☆"}</button>
+      <button class="rowbtn" data-open><div><div class="nm">${esc(s.name)}</div><div class="sub">${s.alt!=null?num(s.alt)+" m · ":""}${esc(s.rn)}${km}</div></div>
+      <div class="vals">
+        <div><b>${num(v.HS)}</b><span>cm</span></div>
+        <div><b>${num(v.LT,1)}</b><span>°C</span></div>
+        <div><b>${v.WG_BOE!=null?num(v.WG_BOE):num(v.WG)}</b><span>${windArrow(v.WR)} km/h</span></div>
+      </div></button></li>`;
+  }).join("");
+  if (!a.length && S.stations.length) $("stMsg").innerHTML += `<div class="banner">${P.mode==="fav" ? "Noch keine Favoriten. Tippe bei einer Station auf den Stern." : "Keine Station passt zur Suche."}</div>`;
+  $("stCount").textContent = a.length ? `${a.length} Stationen` : "";
+  $("stand").textContent = S.stTime ? `Stand ${fmtTime(S.stTime)}${S.stStale ? " (gespeichert)" : ""}` : "Keine Daten";
+}
+$("stList").addEventListener("click", e => {
+  const li = e.target.closest("li.row"); if (!li) return;
+  if (e.target.closest("[data-star]")) { toggleFav(li.dataset.id); renderStations(); return; }
+  openStation(li.dataset.id);
+});
+$("q").addEventListener("input", renderStations);
+$("sort").addEventListener("change", e => { S.prefs.sort = e.target.value; if (S.prefs.mode === "nah") S.prefs.mode = "alle"; savePrefs(); renderStations(); });
+function toggleFav(id){ S.fav.has(id) ? S.fav.delete(id) : S.fav.add(id); store.set("bt_fav", [...S.fav]); if (MAP) drawMarkers(); }
+function locateMe(ok, fail){
+  if (!navigator.geolocation) return fail && fail();
+  navigator.geolocation.getCurrentPosition(p => { S.pos = {lat:p.coords.latitude, lon:p.coords.longitude, alt:p.coords.altitude, acc:p.coords.accuracy, aacc:p.coords.altitudeAccuracy}; ok && ok(); },
+    () => fail && fail(), {enableHighAccuracy:true, timeout:15000, maximumAge:60000});
+}
+
+/* ---------- Detail ---------- */
+const RANGES = [["tag","Tag"],["dreitage","3 Tage"],["woche","Woche"],["monat","Monat"],["winter","Winter"]];
+function openStation(id){
+  const s = S.stations.find(x => x.id === id); if (!s) return;
+  S.open = s; $("shT").textContent = s.name;
+  const star = $("shStar"); const setStar = () => { star.textContent = S.fav.has(s.id) ? "★" : "☆"; star.classList.toggle("on", S.fav.has(s.id)); };
+  setStar(); star.onclick = () => { toggleFav(s.id); setStar(); renderStations(); };
+  const v = s.v, t = (k, extra="") => v[k] == null ? "" : `<div class="tile"><div class="k">${FIELDS[k][0]}</div><div class="v">${num(v[k],FIELDS[k][2])}<small>${FIELDS[k][1]}</small></div>${extra?`<div class="x">${extra}</div>`:""}</div>`;
+  const d = k => v[k] == null ? "" : `${FIELDS[k][0].replace("Differenz ","")}: ${v[k]>0?"+":""}${num(v[k],0)} cm`;
+  const snow = t("HS", [d("HSD24"),d("HSD48"),d("HSD72")].filter(Boolean).join(" · "));
+  const temp = t("LT", [v.LT_MIN!=null?`Min ${num(v.LT_MIN,1)}`:"", v.LT_MAX!=null?`Max ${num(v.LT_MAX,1)}`:""].filter(Boolean).join(" · ") + (v.LT_MIN!=null||v.LT_MAX!=null ? " (24 h)" : ""));
+  const wind = v.WG == null && v.WG_BOE == null ? "" : `<div class="tile"><div class="k">Wind</div><div class="v">${num(v.WG)}<small>km/h</small></div><div class="x">${v.WG_BOE!=null?`Böen ${num(v.WG_BOE)} km/h`:""}${v.WR!=null?` · ${windArrow(v.WR)} aus ${compass(v.WR)} (${num(v.WR)}°)`:""}</div></div>`;
+  const rest = ["TD","OFT","RH","N6","N24","N48","N72","LD","GS_O","GS_U"].map(k => t(k)).join("");
+  const any = snow || temp || wind || rest;
+  $("shB").innerHTML = `
+    <p class="note">${s.alt!=null?num(s.alt)+" m · ":""}${esc(s.rn)}${s.rc?` (${esc(s.rc)})`:""}<br>Messung: ${esc(fmtTime(s.date)) || "unbekannt"}${S.stStale?" · gespeicherte Daten":""}</p>
+    ${any ? `<div class="grid">${snow}${temp}${wind}${rest}</div>` : `<div class="banner">Diese Station liefert gerade keine Messwerte.</div>`}
+    ${s.plot ? `<h3>Verlauf</h3><div class="chips" id="rg">${RANGES.map(([k,l],i)=>`<button class="chip" data-k="${k}" aria-pressed="${i===2}">${l}</button>`).join("")}</div>
+      <div class="plot"><img id="plotImg" alt="Verlaufsdiagramm ${esc(s.name)}" src="${CFG.plot(s.plot,"woche")}"></div>
+      <p class="note" id="plotMsg">Diagramm vom Lawinenwarndienst Tirol. Seitlich wischen, um alles zu sehen.</p>` : ""}
+    <h3>Station</h3>
+    <p class="note">Betreiber: ${s.opl ? `<a href="${esc(s.opl)}" rel="noopener">${esc(s.op || s.opl)}</a>` : esc(s.op || "unbekannt")}${s.since?`<br>Messungen seit ${esc(s.since)}`:""}
+      <br>Koordinaten: ${num(s.lat,4)}, ${num(s.lon,4)}
+      <br><a href="https://www.google.com/maps/search/?api=1&query=${s.lat},${s.lon}" rel="noopener">In Karten-App öffnen</a> · <a href="https://lawinen.report/weather/stations" rel="noopener">Alle Stationen auf lawinen.report</a></p>`;
+  const img = $("plotImg");
+  if (img) {
+    img.onerror = () => { img.closest(".plot").style.display = "none"; $("plotMsg").innerHTML = `Für diesen Zeitraum gibt es kein Diagramm. <a href="https://lawinen.report/weather/stations" rel="noopener">Auf lawinen.report nachsehen</a>`; };
+    $("rg").onclick = e => { const b = e.target.closest(".chip"); if (!b) return;
+      [...$("rg").children].forEach(c => c.setAttribute("aria-pressed", c === b));
+      img.closest(".plot").style.display = ""; $("plotMsg").textContent = "Diagramm vom Lawinenwarndienst Tirol. Seitlich wischen, um alles zu sehen."; img.src = CFG.plot(s.plot, b.dataset.k); };
+  }
+  $("sheet").classList.add("on"); $("shB").scrollTop = 0; $("shClose").focus();
+}
+$("shClose").onclick = () => { $("sheet").classList.remove("on"); S.open = null; };
+document.addEventListener("keydown", e => { if (e.key === "Escape") $("shClose").click(); });
+
+/* ---------- Lawinenreport ---------- */
+const lvlOf = r => (LVL[r.mainValue] || [0,"keine Angabe"]);
+function elevTxt(e){ if (!e) return ""; const f = x => x === "treeline" ? "Waldgrenze" : `${x} m`;
+  if (e.lowerBound && e.upperBound) return `${f(e.lowerBound)} bis ${f(e.upperBound)}`;
+  if (e.lowerBound) return `oberhalb ${f(e.lowerBound)}`; if (e.upperBound) return `unterhalb ${f(e.upperBound)}`; return ""; }
+function rose(asp){ const A = ["N","NE","E","SE","S","SW","W","NW"], set = new Set(asp || []);
+  const seg = A.map((a,i) => { const a0 = (i*45-22.5-90)*Math.PI/180, a1 = (i*45+22.5-90)*Math.PI/180;
+    const p = (r,t) => `${(24+r*Math.cos(t)).toFixed(1)},${(24+r*Math.sin(t)).toFixed(1)}`;
+    return `<path d="M24,24 L${p(20,a0)} A20,20 0 0 1 ${p(20,a1)} Z" fill="${set.has(a)?"var(--ink)":"var(--chip)"}" stroke="var(--surface)" stroke-width="1.2"/>`; }).join("");
+  return `<svg viewBox="0 0 48 48" width="54" height="54" role="img" aria-label="Expositionen ${[...set].join(", ")}">${seg}<text x="24" y="7.5" text-anchor="middle" font-size="7" font-weight="700" fill="var(--muted)" style="paint-order:stroke" stroke="var(--surface)" stroke-width="2">N</text></svg>`; }
+function renderBulletins(){
+  chips($("bLandChips"), LAND, S.prefs.bland, k => { S.prefs.bland = k; savePrefs(); renderBulletins(); });
+  const box = $("bList");
+  if (!S.bulletins) {
+    $("bStand").textContent = "";
+    box.innerHTML = `<div class="banner">Gerade ist kein Lawinenreport abrufbar. Außerhalb der Saison erscheint keiner, sonst täglich um 17 Uhr für den Folgetag. <a href="https://lawinen.report" rel="noopener">lawinen.report öffnen</a></div>`;
+    return;
+  }
+  const d = S.bulDate ? new Date(S.bulDate+"T12:00:00").toLocaleDateString("de-AT",{weekday:"long",day:"2-digit",month:"2-digit",year:"numeric"}) : "";
+  $("bStand").textContent = `Lawinenreport für ${d}${S.bulStale ? " · gespeicherte Daten, keine Verbindung" : ""}`;
+  const q = $("bq").value.trim().toLowerCase(), land = S.prefs.bland;
+  const items = S.bulletins.map(b => {
+    const regs = (b.regions || []).filter(r => (!land || String(r.regionID).startsWith(land)));
+    const hit = regs.filter(r => !q || String(r.name).toLowerCase().includes(q));
+    const max = Math.max(0, ...(b.dangerRatings || []).map(r => lvlOf(r)[0]));
+    return {b, regs, hit, max};
+  }).filter(x => x.hit.length).sort((x,y) => y.max - x.max);
+  if (!items.length) { box.innerHTML = `<div class="banner">Keine Region passt zur Suche.</div>`; return; }
+  box.innerHTML = items.map(({b, regs, max}) => {
+    const rates = (b.dangerRatings || []).map(r => { const [n,t] = lvlOf(r); const parts = [PERIOD[r.validTimePeriod], elevTxt(r.elevation)].filter(Boolean).join(", ");
+      return `<span class="pill"><b>${n || "–"} ${esc(t)}</b>${parts ? " · " + esc(parts) : ""}</span>`; }).join("");
+    const probs = (b.avalancheProblems || []).map(p => `<div class="prob">${rose(p.aspects)}<div><b>${esc(PROB[p.problemType] || p.problemType)}</b><span>${esc([PERIOD[p.validTimePeriod], elevTxt(p.elevation)].filter(Boolean).join(", "))}</span></div></div>`).join("");
+    const det = (t, s) => s ? `<details><summary>${t}</summary><p>${rich(s)}</p></details>` : "";
+    const tend = (b.tendency || []).map(t => t.highlights || t.comment).filter(Boolean).join(" ");
+    return `<article class="bul"><div class="hd"><div class="lvl l${max}" aria-label="Gefahrenstufe ${max}">${max || "–"}</div>
+      <div><div class="hl">${rich(b.avalancheActivity?.highlights || "Lawinenreport")}</div><div class="note" style="margin:2px 0 0">${regs.map(r => esc(r.name)).join(" · ")}</div></div></div>
+      <div class="body"><div class="rate">${rates}</div>${probs}
+      ${det("Gefahrenbeurteilung", b.avalancheActivity?.comment)}${det("Schneedecke", b.snowpackStructure?.comment)}${det("Tendenz", tend)}</div></article>`;
+  }).join("");
+}
+$("bq").addEventListener("input", renderBulletins);
+
+/* ---------- Karte ---------- */
+let MAP = null, LAYER = null, ME = null;
+function colorFor(k, x){
+  if (x == null) return "#d5dbe0";
+  const ramp = (stops) => { for (const [lim, c] of stops) if (x <= lim) return c; return stops[stops.length-1][1]; };
+  if (k === "HS") return ramp([[0,"#e9ecef"],[20,"#d6ecff"],[50,"#a9d3ff"],[100,"#74b2f7"],[150,"#4b8fe6"],[250,"#b79bf0"],[1e9,"#e39bd8"]]);
+  if (k === "HSD24") return ramp([[0,"#e9ecef"],[5,"#d6ecff"],[15,"#a9d3ff"],[30,"#74b2f7"],[50,"#b79bf0"],[1e9,"#e39bd8"]]);
+  if (k === "LT") return ramp([[-15,"#b79bf0"],[-10,"#8fb0ff"],[-5,"#a9d3ff"],[0,"#d6ecff"],[5,"#fff3b0"],[10,"#ffd27a"],[1e9,"#ff9f6b"]]);
+  return ramp([[20,"#e9ecef"],[40,"#fff3b0"],[60,"#ffd27a"],[80,"#ff9f6b"],[1e9,"#ff6b6b"]]);
+}
+function initMap(){
+  if (MAP || !window.L) { if (!window.L) $("mapMsg").textContent = "Die Karte konnte nicht geladen werden. Internetverbindung prüfen."; return; }
+  MAP = L.map("map", {zoomControl:true, attributionControl:true}).setView([47.2, 11.3], 8);
+  const osm = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:18, attribution:"© OpenStreetMap"});
+  const topo = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {maxZoom:17, attribution:"© OpenTopoMap (CC-BY-SA), © OpenStreetMap"});
+  const bm = L.tileLayer("https://mapsneu.wien.gv.at/basemap/bmapgelaende/grau/google3857/{z}/{y}/{x}.jpeg", {maxZoom:17, attribution:"© basemap.at"});
+  topo.addTo(MAP); L.control.layers({"Topografisch":topo, "Straßenkarte":osm, "Gelände (basemap.at)":bm}, null, {position:"topright"}).addTo(MAP);
+  LAYER = L.layerGroup().addTo(MAP); setTimeout(() => { MAP.invalidateSize(); drawMarkers(true); }, 80);
+}
+function drawMarkers(fit){
+  if (!MAP) return; LAYER.clearLayers();
+  const k = S.prefs.mapParam, land = S.prefs.land, dec = FIELDS[k][2], pts = [];
+  S.stations.filter(s => !land || s.rc.startsWith(land)).forEach(s => {
+    const x = s.v[k]; if (x == null && !S.fav.has(s.id)) return;
+    const icon = L.divIcon({html:`<span class="mk ${S.fav.has(s.id)?"fav":""}" style="background:${colorFor(k,x)}">${x==null?"·":num(x,dec)}</span>`, iconSize:[0,0]});
+    L.marker([s.lat, s.lon], {icon, title:s.name, keyboard:false}).on("click", () => openStation(s.id)).addTo(LAYER); pts.push([s.lat, s.lon]);
+  });
+  $("mapMsg").textContent = pts.length ? `${pts.length} Stationen mit diesem Wert` : "Keine Station liefert diesen Wert.";
+  if (fit && pts.length) MAP.fitBounds(pts, {padding:[20,20]});
+}
+$("mapParam").addEventListener("change", e => { S.prefs.mapParam = e.target.value; savePrefs(); drawMarkers(); });
+$("locate").onclick = () => locateMe(() => { if (!MAP) return; if (ME) ME.remove();
+  ME = L.circleMarker([S.pos.lat, S.pos.lon], {radius:8, color:"#fff", weight:3, fillColor:"#0a6a8a", fillOpacity:1}).addTo(MAP); MAP.setView([S.pos.lat, S.pos.lon], 11); },
+  () => { $("mapMsg").textContent = "Standort nicht verfügbar. Standortzugriff im Browser erlauben."; });
+
+/* ---------- Werkzeuge ---------- */
+let sensOn = false;
+function onOrient(e){
+  if (e.beta != null && e.gamma != null) {
+    const r = Math.PI/180, a = Math.acos(Math.min(1, Math.max(-1, Math.cos(e.beta*r)*Math.cos(e.gamma*r))))/r;
+    $("incl").innerHTML = `${num(a,0)}<small>°</small>`;
+    const st = a < 30 ? ["s1","unter 30°"] : a < 35 ? ["s2","30 bis 35°, steil"] : a < 40 ? ["s3","35 bis 40°, sehr steil"] : ["s4","über 40°, extrem steil"];
+    const el = $("inclState"); el.className = "state " + st[0]; el.textContent = st[1];
+  }
+  let h = null;
+  if (typeof e.webkitCompassHeading === "number") h = e.webkitCompassHeading; else if (e.absolute && e.alpha != null) h = 360 - e.alpha;
+  if (h != null) { $("head").innerHTML = `${num(h,0)}<small>° ${compass(h)}</small>`;
+    $("headTxt").textContent = `Blickrichtung ${compass(h)}. Schaust du hangabwärts, ist das die Exposition des Hangs.`; }
+}
+$("sensBtn").onclick = async () => {
+  if (sensOn) return;
+  try {
+    if (typeof DeviceOrientationEvent === "undefined") throw new Error("nicht unterstützt");
+    if (typeof DeviceOrientationEvent.requestPermission === "function") { const p = await DeviceOrientationEvent.requestPermission(); if (p !== "granted") throw new Error("abgelehnt"); }
+    window.addEventListener("deviceorientationabsolute", onOrient, true); window.addEventListener("deviceorientation", onOrient, true);
+    sensOn = true; $("sensBtn").textContent = "Sensoren sind an"; $("sensBtn").disabled = true;
+  } catch(err) { $("inclState").textContent = "Sensorzugriff nicht möglich: " + err.message + ". In Safari unter Einstellungen → Bewegung erlauben."; }
+};
+$("posBtn").onclick = () => { $("posTxt").textContent = "Position wird bestimmt …";
+  locateMe(() => { const p = S.pos; $("alt").innerHTML = `${p.alt != null ? num(p.alt,0) : "–"}<small> m</small>`;
+    $("posTxt").textContent = `${num(p.lat,5)}, ${num(p.lon,5)} · Genauigkeit Lage ± ${num(p.acc,0)} m${p.aacc ? `, Höhe ± ${num(p.aacc,0)} m` : ""}`; },
+    () => { $("posTxt").textContent = "Standort nicht verfügbar. Standortzugriff im Browser erlauben."; }); };
+
+/* ---------- Navigation und Start ---------- */
+const TABS = ["stationen","karte","lawinen","werkzeuge"];
+function route(){
+  const t = TABS.includes(location.hash.slice(1)) ? location.hash.slice(1) : "stationen";
+  TABS.forEach(x => { $("v-"+x).classList.toggle("on", x === t); });
+  document.querySelectorAll("#tabs a").forEach(a => a.classList.toggle("on", a.dataset.t === t));
+  if (t === "karte") { initMap(); if (MAP) setTimeout(() => MAP.invalidateSize(), 50); }
+}
+window.addEventListener("hashchange", route);
+async function refresh(){
+  $("reloadIc").classList.add("spin"); S.stErr = null;
+  await Promise.all([loadStations(), loadBulletins()]);
+  $("reloadIc").classList.remove("spin");
+  renderStations(); renderBulletins(); if (MAP) drawMarkers();
+  if (S.open) { const still = S.stations.find(x => x.id === S.open.id); if (still && $("sheet").classList.contains("on")) openStation(still.id); }
+}
+$("reload").onclick = refresh;
+$("mapParam").value = S.prefs.mapParam;
+(function boot(){
+  const c = store.get("bt_st", null); if (c && c.d) { S.stations = c.d; S.stTime = c.t; S.stStale = true; }
+  const b = store.get("bt_bu", null); if (b && b.d) { S.bulletins = b.d; S.bulDate = b.date; S.bulStale = true; }
+  route(); renderStations(); renderBulletins(); refresh();
+  setInterval(() => { if (!document.hidden) refresh(); }, CFG.refreshMin*60000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && S.stTime && Date.now()-S.stTime > CFG.refreshMin*60000) refresh(); });
+})();
+</script>
+</body>
+</html>
